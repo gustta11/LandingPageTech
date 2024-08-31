@@ -1,0 +1,383 @@
+:root{
+    --primary: #00baf2;
+    --secondary: #95989a;
+    --text-color: #fff;
+    --text-secondary: #000;
+    --text-tertiary: #5d5d5d;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+
+
+#evento_anuncio{
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("../img/background.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--text-color);   
+}
+
+#event-description h2, #event-description .event-date{
+     color: aqua;
+}
+
+#event-description h2{
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+#event-description .about-event{
+    font-size: 3em;
+    font-weight: bold;
+    max-width: 350px;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+#event-description p{
+    font-size: 1.2em;
+    margin-bottom: 0.3em;
+}
+
+#event-description .event-date{
+   font-weight: bold;
+}
+
+#subscription-form{
+    padding: 2em;
+    background-color: var(--secondary);
+    max-width: 22%;
+    border-radius: 8px;
+}
+
+#subscription-form p{
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: var(--text-secondary);
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 0.8em;
+}
+
+.form-group label{
+    color: var(--text-tertiary);
+    padding: 0.3em 0em;
+    font-weight: bold;
+}
+
+.form-group input, .form-group select{
+    border: none;
+    padding: 6px 10px;
+    border-radius: 8px;
+    outline: none;
+}
+
+.btn{
+    width: 100%;
+    background-color: var(--primary);
+    border: none;
+    padding: 12px;
+    margin-top: 8px;
+    border-radius: 8px;
+    opacity: 0.8;
+    cursor: pointer;
+    
+}
+
+.btn:hover{
+    opacity: 1;
+}
+
+#learn h2{
+    background-color: var(--secondary);
+    padding: 2em;
+    text-align: center;
+}
+
+.benefits{
+    display: flex;
+    justify-content: space-around;
+    padding: 4em;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.benefit{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 20%;
+    align-items: center;
+}
+
+.benefit .benefit-img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center ;
+    margin-bottom: 1em;
+}
+
+#benefit-1{
+    background-image: url('../img/hardware.jpg');
+}
+
+#benefit-2{
+    background-image: url('../img/programacao.jpg');
+}
+
+#benefit-3{
+    background-image: url('../img/setup.jpg');
+}
+
+#location{
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("../img/local.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    justify-content: space-around;
+    display: flex;
+    color: var(--text-color);
+    align-items: center;
+}
+
+#address, #adress-local{
+    max-width: 30%;
+}
+
+#adress{
+    display: flex;
+}
+
+#address-details i{
+    font-size: 4em;
+    color: var(--primary);
+}
+
+#address-details p{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+
+#adress-local{
+    max-width: 350px;
+}
+
+#adress-local h2{
+    margin-bottom: 1.5em;
+    text-transform: uppercase;
+    color: var(--primary);
+    font-size: 3em;
+    font-weight: bold;
+}
+
+#adress-local p{
+    line-height: 1.5em;
+}
+
+#matters{
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.matter{
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    margin-bottom: 4em;
+    align-items: center;
+}
+
+#matters img{
+    width: 50%;
+}
+
+.matters-description{
+    width: 100%;
+    padding-left: 2em;
+}
+
+#autors h2{
+    background-color: var(--secondary);
+    padding: 2em;
+    text-align: center;
+}
+
+#autors .speakrs{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 4em;
+}
+
+.speaker{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.speaker .speaker-img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1em;
+}
+
+#speaker-1{
+    background-image: url('../img/homemcareca.jpg');   
+}
+
+#speaker-2{
+    background-image: url('../img/menina.jpg');
+}
+
+#speaker-3{
+    background-image: url('../img/homemCabeloBlack.jpg');    
+}
+
+#cta{
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("../img/setup.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    justify-content: space-around;
+    display: flex;
+    color: var(--text-color);
+    align-items: center;
+    flex-direction: column;
+}
+
+#cta .btn{
+    width: 30%;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: var(--text-color);
+    opacity: 1;
+}
+
+#cta h3{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#footer{
+    background-color: var(--text-color);
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.contato h2{
+    color: var(--text-tertiary);
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.contato h3{
+    color: var(--text-tertiary);
+    margin-bottom: 1em;
+}
+
+.contato p{
+    margin-bottom: .5em;
+    color: var(--text-tertiary);
+    font-size: 1.2em;
+}
+
+@media (max-width:450px){
+    #evento_anuncio{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    #event-description{
+        padding: 5%;
+    }
+
+    #event-description .about-event{
+        font-size: 2em;
+    }
+
+    #subscription-form{
+        max-width: 80%;
+        margin-bottom: 1em;
+      
+    }
+
+    .benefits{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .benefit p{
+        margin-bottom: .8em;
+    }
+
+    #location{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #address, #adress-local{
+        max-width: 100%;
+        padding: 10%;
+    }
+
+    .speakrs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .speaker p{
+        margin-bottom: .8em;
+    }
+
+    #cta .btn{
+        width: 80%;
+    }
+
+    #cta h3{
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+
+}
